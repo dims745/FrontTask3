@@ -122,6 +122,9 @@ function Squares(props) {
             squareBox.children[i].children[componentInfo.currentPositionY],
           );
         componentInfo.x -= 1;
+        if (componentInfo.currentPositionY === i) {
+          setPosition(i - 1, componentInfo.currentPositionX);
+        }
       }
     }
   }
@@ -146,7 +149,7 @@ function Squares(props) {
   return (
     // eslint-disable-next-line jsx-a11y/mouse-events-have-key-events
     <div
-      className="root"
+      className="squareCustomComponent"
       onMouseOver={changeButtonPosition}
       ref={component}
     >

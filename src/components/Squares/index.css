@@ -1,12 +1,12 @@
-.squareBox {
+.squareCustomComponent .squareBox {
     display: flex;
     border: 1px solid gray;
 }
-.square {
+.squareCustomComponent .square {
     margin: 1px;
     background-color: #419fe4;
 }
-.modSquare {
+.squareCustomComponent .modSquare {
     box-sizing: content-box;
     padding: 0px;
     display: flex;
@@ -17,25 +17,25 @@
     cursor: pointer;
     border: 2px solid white;
 }
-.modSquare:hover {
+.squareCustomComponent .modSquare:hover {
     border: 2px solid #419fe4;
 }
-.add {
+.squareCustomComponent .add {
     transition: background-color 0.5s;
     background-color: #f3a500;
 }
-.add:hover {
+.squareCustomComponent .add:hover {
     background-color: #f6c052;
 }
-.sub {
+.squareCustomComponent .sub {
     transition: margin 0.5s;
     background-color:#b22901;
     visibility: hidden;
 }
-.sub:hover {
+.squareCustomComponent .sub:hover {
     background-color: #ca4c49;
 }
-.medium {
+.squareCustomComponent .medium {
     display: flex;
     width: fit-content;
 }
